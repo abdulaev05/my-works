@@ -1,0 +1,35 @@
+body {
+  font-family: 'Sen';
+  font-weight: 400;
+
+  color: $text;
+  background-color: $black;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  padding-inline: clamp(20px, 5.21vw, 72px);
+}
+
+.row {
+  display: flex;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+.link {
+  transition: all 0.3s;
+  &:hover {
+    background-color: $primary;
+  }
+}

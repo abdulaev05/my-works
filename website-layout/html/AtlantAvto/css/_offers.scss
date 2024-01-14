@@ -1,0 +1,228 @@
+.offers {
+  font-family: 'Museo Sans Cyrl';
+  margin-top: 76px;
+  .row{
+    gap: 44px;
+    .offers__viewAll{
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+  //ЗАГОЛОВОК
+  &__text {
+    margin: 0;
+    font-weight: 500;
+    font-size: 32px;
+  }
+  //ГАЛЕРЕЯ
+  &__galery {
+    display: flex;
+    margin-top: 44px;
+  }
+  &__galeryItems{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    column-gap: 20px;
+    width: 100%;
+  }
+  &__galeryItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & img{
+      width: 100%;
+    }
+  }
+  &__galeryTextContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 20px 20px;
+    & h3{
+      margin: 0;
+      display: grid;
+      grid-column: span 3;
+      margin-top: 16px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 140%;
+    }
+  }
+  &__galeryPrice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+    .priceSale{
+      margin: 0;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      color: #5B5B5B;
+    }
+    .price{
+      margin: 0;
+      justify-self: end;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      color: #FA544B;
+    }
+  }
+  & hr{
+    display: flex;
+    margin: 10px 0;
+    color: #000;
+  }
+  &__galeryTextInfo {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__galeryTextInfoItem {
+    & p{
+      margin: 0;
+      font-size: 10px;
+      color: #5B5B5B;
+    }
+    & h5{
+      margin: 0;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+  &__more{
+    display: grid;
+    grid-column: span 3;
+    margin-top: 12px;
+    & button{
+      background: radial-gradient(100.17% 3654.2% at 6.13% 19%, #4BBADD 0%, #4B97DD 100%);
+      color: #fff;
+      font-weight: 500;
+      border: none;
+      height: 50px;
+      border-radius: 5px;
+      &:hover{
+        background: radial-gradient(100.17% 3654.2% at 6.13% 19%, #0098c6 0%, #1876cf 100%);
+        color: #000;
+        cursor: pointer;
+      }
+    }
+  }
+  //КНОПКА СМОТРЕТЬ ВСЕ
+  &__viewAll{
+    display: grid;
+    place-items: center;
+    margin-top: 64px;
+    & button{
+      width: 200px;
+      height: 50px;
+      background: #fff;
+      color: #000;
+      font-weight: 500;
+      border: 2px solid #E0E0E0;
+      height: 50px;
+      border-radius: 5px;
+      transition: all 0.1s ease;
+      &:hover{
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+  a{text-decoration: none;}
+
+  
+  //БУТСТРАП СЛАЙДЕР
+  .carousel-control-prev{
+    display: none;
+    left: -3%;
+  }
+  .carousel-control-next{
+    display: none;
+    right: -3%;
+  }
+  .carousel-control-prev-icon{
+    background: url('../imgs/arrow-left.png') no-repeat;
+    background-size: contain;
+  }
+  .carousel-control-next-icon{
+    background: url('../imgs/arrow-right.png') no-repeat;
+    background-size: contain;
+  }
+
+  @media (min-width:1200px) {
+    &__galeryItems{
+      grid-template-columns: repeat(4 , 1fr);
+    }
+  }
+  @media (max-width:992px) {
+    padding: 0 20px;
+    &__galery{
+      justify-content: center;
+    }
+    &__galeryItems{
+      display: flex;
+      max-width: 75%;
+    }
+    
+    //БУТСТРАП СЛАЙДЕР  
+    .carousel-control-prev{
+      display: flex;
+    }
+    .carousel-control-next{
+      display: flex;
+    }
+
+    //КНОПКА СМОТРЕТЬ ВСЕ
+    &__viewAll{
+      display: none;
+    }
+  }
+  @media (max-width:768px) {
+    //ЗАГОЛОВОК
+    &__text {
+      margin: 0;
+      font-weight: 500;
+      font-size: 20px;
+    }
+    //ГАЛЕРЕЯ
+    &__galeryTextContainer {
+      & h3{
+        font-size: 14px;
+      }
+    }
+    &__galeryPrice{
+      .priceSale{
+        font-size: 12px;
+      }
+      .price{
+        font-size: 14px;
+      }
+    }
+    &__galeryTextInfoItem {
+      & p{
+        font-size: 8px;
+      }
+      & h5{
+        font-size: 10px;
+      }
+    }
+    &__more{
+      & button{
+        height: 45px;
+      }
+    }
+
+    .carousel-control-prev-icon{
+      width: 12px;
+      height: 20px;
+    }
+    .carousel-control-next-icon{
+      width: 12px;
+      height: 20px;
+    }
+  }
+
+}

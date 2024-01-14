@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- meta character set -->
+    <meta charset="utf-8" />
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>GoodApart</title>
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS
+		================================================== -->
+
+    <!-- Fontawesome Icon font -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- bootstrap.min -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <!-- bootstrap.min -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- bootstrap.min -->
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <!-- bootstrap.min -->
+    <link rel="stylesheet" href="css/slit-slider.css" />
+    <!-- bootstrap.min -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Modernizer Script for old Browsers -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+  </head>
+
+  <body id="body">
+    <!-- preloader -->
+    <div id="preloader">
+      <div class="loder-box">
+        <div class="battery"></div>
+      </div>
+    </div>
+    <!-- end preloader -->
+
+    <!--
+        Fixed Navigation
+        ==================================== -->
+    <header
+      id="navigation"
+      class="navbar-inverse navbar-fixed-top animated-header"
+    >
+      <div class="container">
+        <div class="navbar-header">
+          <!-- responsive nav button -->
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- /responsive nav button -->
+
+          <!-- logo -->
+          <h1 class="navbar-brand">
+            <a href="#body">GoodApart</a>
+          </h1>
+          <!-- /logo -->
+        </div>
+
+        <!-- main nav -->
+        <nav class="collapse navbar-collapse navbar-right" role="navigation">
+          <ul id="nav" class="nav navbar-nav">
+            <li><a href="#body">Главное</a></li>
+            <li><a href="#about">Описание</a></li>
+            <li><a href="#portfolio">Галерея</a></li>
+            <li><a href="#price">Прайс</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+        </nav>
+        <!-- /main nav -->
+      </div>
+    </header>
+    <!--
+        End Fixed Navigation
+        ==================================== -->
+
+    <main class="site-content" role="main">
+      <!--
+        Home Slider
+        ==================================== -->
+
+      <section id="home-slider" class="nav">
+        <div id="slider" class="sl-slider-wrapper">
+          <div class="sl-slider">
+            <div
+              class="sl-slide"
+              data-orientation="horizontal"
+              data-slice1-rotation="-25"
+              data-slice2-rotation="-25"
+              data-slice1-scale="2"
+              data-slice2-scale="2"
+            >
+              <div class="bg-img bg-img-1"></div>
+
+              <div class="slide-caption">
+                <div class="caption-content">
+                  <h2 class="animated fadeInDown">«Уютные апартаменты»</h2>
+                  <span class="animated fadeInDown">Премиум класса</span>
+                  <a href="#contact" class="btn btn-blue btn-effect">Забронировать</a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="sl-slide"
+              data-orientation="vertical"
+              data-slice1-rotation="10"
+              data-slice2-rotation="-15"
+              data-slice1-scale="1.5"
+              data-slice2-scale="1.5"
+            >
+              <div class="bg-img bg-img-2"></div>
+              <div class="slide-caption">
+                <div class="caption-content">
+                  <h2 class="animated fadeInDown">«Уютные апартаменты»</h2>
+                  <span class="animated fadeInDown">Премиум класса</span>
+                  <a href="#contact" class="btn btn-blue btn-effect">Забронировать</a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="sl-slide"
+              data-orientation="horizontal"
+              data-slice1-rotation="3"
+              data-slice2-rotation="3"
+              data-slice1-scale="2"
+              data-slice2-scale="1"
+            >
+              <div class="bg-img bg-img-3"></div>
+              <div class="slide-caption">
+                <div class="caption-content">
+                  <h2 class="animated fadeInDown">«Уютные апартаменты»</h2>
+                  <span class="animated fadeInDown">Премиум класса</span>
+                  <a href="#contact" class="btn btn-blue btn-effect">Забронировать</a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="sl-slide"
+              data-orientation="vertical"
+              data-slice1-rotation="10"
+              data-slice2-rotation="-15"
+              data-slice1-scale="1.5"
+              data-slice2-scale="1.5"
+            >
+              <div class="bg-img bg-img-4"></div>
+              <div class="slide-caption">
+                <div class="caption-content">
+                  <h2 class="animated fadeInDown">«Уютные апартаменты»</h2>
+                  <span class="animated fadeInDown">Премиум класса</span>
+                  <a href="#contact" class="btn btn-blue btn-effect">Забронировать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav
+            id="nav-arrows"
+            class="nav-arrows hidden-xs hidden-sm visible-md visible-lg"
+          >
+            <a href="javascript:;" class="sl-prev">
+              <i class="fa fa-angle-left fa-3x"></i>
+            </a>
+            <a href="javascript:;" class="sl-next">
+              <i class="fa fa-angle-right fa-3x"></i>
+            </a>
+          </nav>
+
+          <nav
+            id="nav-dots"
+            class="nav-dots visible-xs visible-sm hidden-md hidden-lg"
+          >
+            <span class="nav-dot-current"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </nav>
+        </div>
+        <!-- /slider-wrapper -->
+      </section>
+
+      <!--
+        End Home SliderEnd
+        ==================================== -->
+
+      <!-- about section -->
+      <section id="about">
+        <div class="container">
+          <div class="row" >
+            <div class="sec-title white about-rules col-md-12 wow animated fadeInRight">
+							<h2>Описание</h2>
+							<p>
+								Апартаменты находятся в одном из самых оживлённых районов города, в шаговой доступности парки, аллеи, торговые центры, рестораны, кофейни.
+								Апартаменты класса люкс с дизайнерским ремонтом, очень уютная и светлая квартира, в которой находится все для комфортного проживания!
+							</p>
+            </div>
+            <div class="sec-title white about-rules col-md-12 wow animated fadeInLeft">
+							<h2>Правила</h2>
+              <div class="about-forbidden">
+                <ul>Запрещено
+                  <li>* Курить</li>
+                  <li>* Распивать спиртные напитки</li>
+                  <li>* Портить имущество (штраф стоимости повреждённой мебели)</li>
+                  <li>* С животными</li>
+                </ul>
+              </div>
+							<p>
+								Заезд в 14 часов --
+								Выезд в 12 часов
+							</p>
+            </div>
+        </div>
+      </section>
+      <!-- end about section -->
+
+      <!-- portfolio section -->
+      <section id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="sec-title text-center wow animated fadeInDown">
+              <h2>Галерея</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+
+            <ul class="project-wrapper wow animated fadeInUp">
+              <li class="portfolio-item">
+                <img
+                  src="img/aportment1/9.jpeg"
+                  class="img-responsive"
+                  alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+                />
+                <!-- <figcaption class="mask">
+                  <h3>Wall street</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting ndustry.
+                  </p>
+                </figcaption> -->
+                <ul class="external">
+                  <li>
+                    <a
+                      class="fancybox"
+                      title="Araund The world"
+                      data-fancybox-group="works"
+                      href="img/aportment1/9.jpeg"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa fa-link"></i></a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="portfolio-item">
+                <img
+                  src="img/aportment1/10.jpeg"
+                  class="img-responsive"
+                  alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. "
+                />
+                <!-- <figcaption class="mask">
+                  <h3>Wall street</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting ndustry.
+                  </p>
+                </figcaption> -->
+                <ul class="external">
+                  <li>
+                    <a
+                      class="fancybox"
+                      title="Wall street"
+                      href="img/aportment1/10.jpeg"
+                      data-fancybox-group="works"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa fa-link"></i></a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="portfolio-item">
+                <img
+                  src="img/aportment2/11.jpeg"
+                  class="img-responsive"
+                  alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. "
+                />
+                <!-- <figcaption class="mask">
+                  <h3>Wall street</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting ndustry.
+                  </p>
+                </figcaption> -->
+                <ul class="external">
+                  <li>
+                    <a
+                      class="fancybox"
+                      title="Behind The world"
+                      data-fancybox-group="works"
+                      href="img/aportment2/11.jpeg"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa fa-link"></i></a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="portfolio-item">
+                <img
+                  src="img/aportment2/10.jpeg"
+                  class="img-responsive"
+                  alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry."
+                />
+                <!-- <figcaption class="mask">
+                  <h3>Wall street</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting ndustry.
+                  </p>
+                </figcaption> -->
+                <ul class="external">
+                  <li>
+                    <a
+                      class="fancybox"
+                      title="Wall street 4"
+                      data-fancybox-group="works"
+                      href="img/aportment2/10.jpeg"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa fa-link"></i></a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="portfolio-item">
+                <img
+                  src="img/aportment2/6.jpeg"
+                  class="img-responsive"
+                  alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. "
+                />
+                <!-- <figcaption class="mask">
+                  <h3>Wall street</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting ndustry.
+                  </p>
+                </figcaption> -->
+                <ul class="external">
+                  <li>
+                    <a
+                      class="fancybox"
+                      title="Wall street 5"
+                      data-fancybox-group="works"
+                      href="img/aportment2/6.jpeg"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa fa-link"></i></a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="portfolio-item">
+                <img
+                  src="img/aportment2/5.jpeg"
+                  class="img-responsive"
+                  alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. "
+                />
+                <!-- <figcaption class="mask">
+                  <h3>Wall street</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting ndustry.
+                  </p>
+                </figcaption> -->
+                <ul class="external">
+                  <li>
+                    <a
+                      class="fancybox"
+                      title="Wall street 6"
+                      data-fancybox-group="works"
+                      href="img/aportment2/5.jpeg"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa fa-link"></i></a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="portfolio-item">
+                <img
+                  src="img/aportment2/4.jpeg"
+                  class="img-responsive"
+                  alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. "
+                />
+                <!-- <figcaption class="mask">
+                  <h3>Wall street</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting ndustry.
+                  </p>
+                </figcaption> -->
+                <ul class="external">
+                  <li>
+                    <a
+                      class="fancybox"
+                      title="Wall street 6"
+                      data-fancybox-group="works"
+                      href="img/aportment2/4.jpeg"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa fa-link"></i></a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="portfolio-item">
+                <img
+                  src="img/aportment2/16.jpeg"
+                  class="img-responsive"
+                  alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. "
+                />
+                <!-- <figcaption class="mask">
+                  <h3>Wall street</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting ndustry.
+                  </p>
+                </figcaption> -->
+                <ul class="external">
+                  <li>
+                    <a
+                      class="fancybox"
+                      title="Wall street 6"
+                      data-fancybox-group="works"
+                      href="img/aportment2/16.jpeg"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa fa-link"></i></a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="portfolio-item">
+                <img
+                  src="img/aportment2/1.jpeg"
+                  class="img-responsive"
+                  alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. "
+                />
+                <!-- <figcaption class="mask">
+                  <h3>Wall street</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting ndustry.
+                  </p>
+                </figcaption> -->
+                <ul class="external">
+                  <li>
+                    <a
+                      class="fancybox"
+                      title="Wall street 6"
+                      data-fancybox-group="works"
+                      href="img/aportment2/1.jpeg"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa fa-link"></i></a>
+                  </li>
+                </ul>
+              </li>
+							
+              <li class="portfolio-item">
+                <img
+                  src="img/aportment2/7.jpeg"
+                  class="img-responsive"
+                  alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. "
+                />
+                <!-- <figcaption class="mask">
+                  <h3>Wall street</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting ndustry.
+                  </p>
+                </figcaption> -->
+                <ul class="external">
+                  <li>
+                    <a
+                      class="fancybox"
+                      title="Wall street 6"
+                      data-fancybox-group="works"
+                      href="img/aportment2/7.jpeg"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa fa-link"></i></a>
+                  </li>
+                </ul>
+              </li>
+							
+              <li class="portfolio-item">
+                <img
+                  src="img/aportment2/2.jpeg"
+                  class="img-responsive"
+                  alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. "
+                />
+                <!-- <figcaption class="mask">
+                  <h3>Wall street</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting ndustry.
+                  </p>
+                </figcaption> -->
+                <ul class="external">
+                  <li>
+                    <a
+                      class="fancybox"
+                      title="Wall street 6"
+                      data-fancybox-group="works"
+                      href="img/aportment2/2.jpeg"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa fa-link"></i></a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="portfolio-item">
+                <img
+                  src="img/aportment2/9.jpeg"
+                  class="img-responsive"
+                  alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. "
+                />
+                <!-- <figcaption class="mask">
+                  <h3>Wall street</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting ndustry.
+                  </p>
+                </figcaption> -->
+                <ul class="external">
+                  <li>
+                    <a
+                      class="fancybox"
+                      title="Wall street 6"
+                      data-fancybox-group="works"
+                      href="img/aportment2/9.jpeg"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa fa-link"></i></a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="portfolio-item">
+                <img
+                  src="img/aportment2/17.jpeg"
+                  class="img-responsive"
+                  alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. "
+                />
+                <!-- <figcaption class="mask">
+                  <h3>Wall street</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting ndustry.
+                  </p>
+                </figcaption> -->
+                <ul class="external">
+                  <li>
+                    <a
+                      class="fancybox"
+                      title="Wall street 6"
+                      data-fancybox-group="works"
+                      href="img/aportment2/17.jpeg"
+                      ><i class="fa fa-search"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa fa-link"></i></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- end portfolio section -->
+
+      <!-- Price section -->
+      <section id="price" class="nav">
+        <div class="container">
+          <div class="row">
+            <div class="sec-title text-center wow animated fadeInDown">
+              <h2>Прайс</h2>
+              <p>Наши ассортименты на выбор</p>
+            </div>
+
+            <div class="col-md-6 wow animated fadeInUp">
+							<div class="price-table">
+								<div class="price-img">
+									<img src="img/aportment1/13.jpeg" width="100%" alt="">
+								</div>
+								<div class="price-description">
+                  <p>*Площадь: 69м<sup>2</sup></p>
+                  <p class="price-furniture">
+                    *Есть вся необходимая мебель:
+                    <span>Большая Двуспальная Кровать,</span>
+                    <span>Диван-Книжка,</span>
+                    <span>Кондиционер,</span>
+                    <span>Фен,</span>
+                    <span>Утюг,</span>
+                    <span>Wi-Fi,</span>
+                    <span>есть вся необходимая техника для комфортного проживания</span>
+                  </p>
+                  <p>*Прекрасное местоположение в пешей доступности большой круглосуточный супермаркет, магазины, салоны красоты, рестораны и кофейни.</p>
+                  <div class="price-order">
+                    <p>Цена</p>
+                    <p>5000р/сут</p>
+                  </div>
+									<a href="#contact" class="price-orderButton">Забронировать</a>
+								</div>
+							</div>
+            </div>
+
+            <div class="col-md-6 wow animated fadeInUp" data-wow-delay="0.4s">
+							<div class="price-table">
+								<div class="price-img">
+									<img src="img/aportment2/12.jpeg" width="100%" alt="">
+								</div>
+								<div class="price-description">
+                  <p>*Площадь: 69м<sup>2</sup></p>
+                  <p class="price-furniture">
+                    *Есть вся необходимая мебель:
+                    <span>Большая Двуспальная Кровать,</span>
+                    <span>Диван-Книжка,</span>
+                    <span>Кондиционер,</span>
+                    <span>Фен,</span>
+                    <span>Утюг,</span>
+                    <span>Wi-Fi,</span>
+                    <span>есть вся необходимая техника для комфортного проживания</span>
+                  </p>
+                  <p>*Прекрасное местоположение в пешей доступности большой круглосуточный супермаркет, магазины, салоны красоты, рестораны и кофейни.</p>
+                  <div class="price-order">
+                    <p>Цена</p>
+                    <p>5000р/сут</p>
+                  </div>
+									<a href="#contact" class="price-orderButton">Забронировать</a>
+								</div>
+							</div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end Price section -->
+
+      <!-- Social section -->
+      <section id="social" class="parallax">
+        <div class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="sec-title text-center white wow animated fadeInDown">
+                <h2>Подпишитесь на нас</h2>
+                <p>
+                  Beautifully simple follow buttons to help you get followers on
+                </p>
+              </div>
+
+              <ul class="social-button">
+                <li class="wow animated zoomIn">
+                  <a href="#"><i class="fa fa-thumbs-up fa-2x"></i></a>
+                </li>
+                <li class="wow animated zoomIn" data-wow-delay="0.3s">
+                  <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                </li>
+                <li class="wow animated zoomIn" data-wow-delay="0.6s">
+                  <a href="#"><i class="fa fa-dribbble fa-2x"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end Social section -->
+
+      <!-- Contact section -->
+      <section id="contact" class="parallax">
+        <div class="container">
+          <div class="row">
+            <div class="sec-title text-center wow animated fadeInDown">
+              <h2>Контакты</h2>
+              <p>Отправить сообщение</p>
+            </div>
+
+            <div class="col-md-7 contact-form wow animated fadeInLeft">
+              <form action="mail.php" method="POST">
+                <div class="input-field">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    placeholder="Имя..."
+                    required
+                  />
+                </div>
+                <div class="input-field">
+                  <input
+                    type="text"
+                    name="lastname"
+                    class="form-control"
+                    placeholder="Фамилия..."
+                    required
+                  />
+                </div>
+                <div class="input-field">
+                  <input
+                    type="text"
+                    name="phone"
+                    class="form-control tel"
+                    placeholder="Номер телефона..."
+                    required
+                  />
+                </div>
+                <div class="contact-date">
+                  <span>от</span>
+                  <div class="">
+                    <input
+                      type="date"
+                      name="from-date"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <span>до</span>
+                  <div class="">
+                    <input
+                      type="date"
+                      name="to-date"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="input-field">
+                  <textarea
+                    name="message"
+                    class="form-control"
+                    placeholder="Сообщение..."
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  id="submit"
+                  class="btn btn-blue btn-effect"
+                >
+                  Отправить
+                </button>
+              </form>
+            </div>
+
+            <div class="col-md-5 wow animated fadeInRight">
+              <address class="contact-details">
+                <h3>Наши контакты</h3>
+                <p>
+                  <i class="fa fa-pencil"></i>
+										г.Махачкала
+									<span>Проспект Имама Шамиля, 76Б</span>
+                </p>
+                <br />
+                <p><i class="fa fa-phone"></i>Номер: <a href="tel:+7-963-400-10-00">+7-963-400-10-00</a></p>
+                <p><i class="fa fa-envelope"></i><a href="mailto:goodapart@mail.ru">goodapart@mail.ru</a></p>
+              </address>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end Contact section -->
+
+      <section id="yandex-map">
+				<div style="position:relative;overflow:hidden;">
+					<a href="https://yandex.ru/maps/28/makhachkala/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Махачкала</a>
+					<a href="https://yandex.ru/maps/28/makhachkala/house/prospekt_imama_shamilya_76b/YE4YcwdnQUwPQFpofXV0d3VkZA==/?ll=47.507898%2C42.956970&utm_medium=mapframe&utm_source=maps&z=17.15" style="color:#eee;font-size:12px;position:absolute;top:14px;">Проспект Имама Шамиля, 76Б — Яндекс Карты</a>
+					<iframe src="https://yandex.ru/map-widget/v1/-/CCUbRPenCB" id="map-canvas" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+				</div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="footer-content wow animated fadeInDown">
+            <div class="col-md-12">
+              <address class="sec-title white footer-details">
+                <h2>Наши контакты</h2>
+                <p>
+                  <i class="fa fa-pencil"></i>
+										г.Махачкала
+									<span>Проспект Имама Шамиля, 76Б</span>
+                </p>
+                <br />
+                <p><i class="fa fa-phone"></i>Номер: <a href="tel:+7-963-400-10-00">+7-963-400-10-00</a></p>
+                <p><i class="fa fa-envelope"></i><a href="mailto:goodapart@mail.ru"> goodapart@mail.ru</a></p>
+              </address>
+            </div>
+            <div class="footer-social">
+              <ul>
+                <li class="wow animated zoomIn">
+                  <a href="#"><i class="fa fa-thumbs-up fa-3x"></i></a>
+                </li>
+                <li class="wow animated zoomIn" data-wow-delay="0.3s">
+                  <a href="#"><i class="fa fa-twitter fa-3x"></i></a>
+                </li>
+                <li class="wow animated zoomIn" data-wow-delay="0.6s">
+                  <a href="#"><i class="fa fa-skype fa-3x"></i></a>
+                </li>
+                <li class="wow animated zoomIn" data-wow-delay="0.9s">
+                  <a href="#"><i class="fa fa-dribbble fa-3x"></i></a>
+                </li>
+                <li class="wow animated zoomIn" data-wow-delay="1.2s">
+                  <a href="#"><i class="fa fa-youtube fa-3x"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Essential jQuery Plugins
+		================================================== -->
+    <!-- Main jQuery -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!-- Twitter Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Single Page Nav -->
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <!-- jquery.fancybox.pack -->
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <!-- Owl Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- jquery easing -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- Fullscreen slider -->
+    <script src="js/jquery.slitslider.js"></script>
+    <script src="js/jquery.ba-cond.min.js"></script>
+    <!-- inputPhone -->
+    <script src="js/inputPhone.js"></script>
+    <!-- onscroll animation -->
+    <script src="js/wow.min.js"></script>
+    <!-- Custom Functions -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

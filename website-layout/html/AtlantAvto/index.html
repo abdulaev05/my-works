@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>index</title>
+</head>
+<body>
+  <!-- ШАПКА -->
+  <header class="header">
+    <div class="containerHeader1320px container p-0">
+      <div class="row m-0">
+        <div class="logo col-xxl-auto p-0">
+          <img src="imgs/logo.png" alt="">
+          <h5>АТЛАНТ<br>АВТО</h5>
+        </div>
+        <div class="location col-xxl-auto p-0">
+          <img src="imgs/location.png" alt="">
+          <p>Санкт-Петербург, Московское<br>шоссе, д. 75, стр. 18</p>
+        </div>
+        <div class="search col-xxl-auto p-0">
+          <input type="text" placeholder="Поиск по каталогу">
+          <img src="imgs/search.png" alt="">
+        </div>
+        <div class="graph col-xxl-auto p-0">
+          <img src="imgs/clock.png" alt="">
+          <p>Пн-пт: 10:00—18-00<br>Сб-вс: 11-00—17-00</p>
+        </div>
+        <div class="contacts col-xxl-auto p-0">
+          <img src="imgs/phone.png" alt="">
+          <div class="phone">
+            <h4>8 (800 )500-30-20</h4>
+            <p>Бесплатные звонки по России</p>
+          </div>
+        </div>
+        <a class="headerButton col-xxl-auto p-0">Заказать звонок</a>
+      </div>
+    </div>
+    <div class="containerHeaderMobile container p-0">
+      <div class="rowHeaderMobile row m-0">
+        <div class="burger col-auto p-0">
+          <span></span>
+        </div>
+        <div class="logo col p-0">
+          <img src="imgs/logo.png" alt="">
+          <h5>АТЛАНТ<br>АВТО</h5>
+        </div>
+        <button class="phone col-1 p-0">
+          <img src="imgs/phone1.png" alt="">
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- НАВИГАЦИОННАЯ ПАНЕЛЬ ПОД ШАПКОЙ -->
+  <nav class="navBar">
+    <div class="container-fluid">
+      <div class="container p-0">
+        <div class="row">
+          <ul class="navigation col-xxl">
+            <li class="item">
+              <div class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Новые автомобили
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="item">
+              <div class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  автомобили с пробегом
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="item">trade-in</li>
+            <li class="item">Кредит</li>
+            <li class="item">
+              <div class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Услуги
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="item">контакты</li>
+            <li class="item">акции</li>
+            <li class="item">отзывы</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- ВЫБОР БРЕНДА АВТОМОБИЛЯ -->
+  <div class="chooseBrend">
+    <div class="container-fluid p-0">
+      <div class="container">
+        <div class="row">
+          <div class="brends p-0">
+            <div class="brends__items">
+            </div>
+          </div>
+          <div class="text">
+            <h2>РАСПРОДАЖА</h2>
+            <h4>Распродаем<br>подготовленные<br>автомобили</h4>
+            <a href="#">Посмотреть автомобили</a>
+          </div>
+        </div>
+      </div>
+      <img class="backgroundZ0" src="imgs/background.png" alt="">
+      <img class="backgroundZ1" src="imgs/audi_background.png" alt="">
+    </div>
+  </div>
+  <!-- ВЫБОР АВТОМОБИЛЕЙ -->
+  <div class="chooseAvto">
+    <div class="container p-0">
+      <div class="row">
+        <h3 class="p-0 m-0">Подобрать автомобиль</h3>
+        <div class="navBar p-0">
+          <form action="#">
+            <ul class="p-0 m-0">
+              <div class="item">
+                <li>Марка</li>
+                <input list="marka" placeholder="Audi">
+                <datalist id="marka">
+                  <option value="Audi"></option>
+                  <option value="BMW"></option>
+                  <option value="Mersedes"></option>
+                </datalist>
+              </div>
+              <div class="item">
+                <li>Модель</li>
+                <input list="model" placeholder="Q5">
+                <datalist id="model">
+                  <option value="Q5"></option>
+                  <option value="BMW"></option>
+                  <option value="Mersedes"></option>
+                </datalist>
+              </div>
+              <div class="item">
+                <li>Коробка передач</li>
+                <input list="transmission" placeholder="Коробка передач">
+                <datalist id="transmission">
+                  <option value="automat"></option>
+                  <option value="mechanics"></option>
+                  <option value="Mersedes"></option>
+                </datalist>
+              </div>
+              <div class="item">
+                <li>Двигатель</li>
+                <input list="engine" placeholder="Двигатель">
+                <datalist id="engine">
+                  <option value="8w"></option>
+                  <option value="4w"></option>
+                  <option value="Mersedes"></option>
+                </datalist>
+              </div>
+              <div class="item">
+                <li>Привод</li>
+                <input list="drive" placeholder="Привод">
+                <datalist id="drive">
+                  <option value="Audi"></option>
+                  <option value="BMW"></option>
+                  <option value="Mersedes"></option>
+                </datalist>
+              </div>
+              <div class="item">
+                <li>Кузов</li>
+                <input list="body" placeholder="Кузов">
+                <datalist id="body">
+                  <option value="Audi"></option>
+                  <option value="BMW"></option>
+                  <option value="Mersedes"></option>
+                </datalist>
+              </div>
+              <button type="submit">Подобрать</button>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Наши услуги -->
+  <div class="service">
+    <div class="container p-0">
+      <div class="row m-0">
+        <h3 class="p-0 m-0">Наши услуги</h3>
+        <div class="service__items p-0">
+          <a href="#"><div class="service__item">
+            <img src="imgs/ourservice/1.png" alt="">
+            <div class="service__text">
+              <h5 class="m-0">АВТОКРЕДИТ</h5>
+              <p class="m-0"><span>ОТ 6%</span></p>
+            </div>
+          </div></a>
+          <a href="#"><div class="service__item">
+            <img src="imgs/ourservice/2.png" alt="">
+            <div class="service__text">
+              <h5 class="m-0">ТАКСИ</h5>
+              <p class="m-0"><span>бесплатно</span><br>до салона</p>
+            </div>
+          </div></a>
+          <a href="#"><div class="service__item">
+            <img src="imgs/ourservice/3.png" alt="">
+            <div class="service__text">
+              <h5 class="m-0">TRADE-IN</h5>
+              <p class="m-0">замена авто<br><span>на новое</span></p>
+            </div>
+          </div></a>
+          <a href="#"><div class="service__item">
+            <img src="imgs/ourservice/4.png" alt="">
+            <div class="service__text">
+              <h5 class="m-0">РЕГИСТРАЦИЯ</h5>
+              <p class="m-0">авто <span>в ГИБДД</span></p>
+            </div>
+          </div></a>
+          <a href="#"><div class="service__item">
+            <img src="imgs/ourservice/5.png" alt="">
+            <div class="service__text">
+              <h5 class="m-0">СТРАХОВКА</h5>
+              <p class="m-0"><span>осаго<br>или каско</span></p>
+            </div>
+          </div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Выгодные предложения! -->
+  <div class="offers">
+    <div class="container p-0">
+      <div class="row m-0">
+        <h3 class="offers__text p-0 m-0">Выгодные предложения!</h3>
+        <div id="carouselExampleControls" class="offers__galery p-0" data-bs-ride="false">
+          <div class="offers__galeryItems">
+            <div class="offers__galeryItem active">
+              <img src="imgs/offers/1.png" alt="">
+              <div class="offers__galeryTextContainer">
+                <h3>Audi Q5 2020г</h3>
+                <div class="offers__galeryPrice">
+                  <p class="priceSale"><del>2 245 000 Р</del></p>
+                  <p class="price"><span>2 245 000 Р</span></p>
+                </div>
+                <hr>
+                <div class="offers__galeryTextInfo">
+                  <div class="offers__galeryTextInfoItem TextInfoItem1">
+                    <p>Пробег</p>
+                    <h5>52 900 км.</h5>
+                  </div>
+                  <div class="offers__galeryTextInfoItem TextInfoItem2">
+                    <p>Двигатель</p>
+                    <h5>220л.с</h5>
+                  </div>
+                  <div class="offers__galeryTextInfoItem TextInfoItem3">
+                    <p>КПП</p>
+                    <h5>Автомат</h5>
+                  </div>
+                </div>
+                <a href="#" class="offers__more"><button>Подробнее</button></a>
+              </div>
+            </div>
+            <div class="offers__galeryItem">
+              <img src="imgs/offers/1.png" alt="">
+              <div class="offers__galeryTextContainer">
+                <h3>Audi Q5 2020г</h3>
+                <div class="offers__galeryPrice">
+                  <p class="priceSale"><del>2 245 000 Р</del></p>
+                  <p class="price"><span>2 245 000 Р</span></p>
+                </div>
+                <hr>
+                <div class="offers__galeryTextInfo">
+                  <div class="offers__galeryTextInfoItem TextInfoItem1">
+                    <p>Пробег</p>
+                    <h5>52 900 км.</h5>
+                  </div>
+                  <div class="offers__galeryTextInfoItem TextInfoItem2">
+                    <p>Двигатель</p>
+                    <h5>220л.с</h5>
+                  </div>
+                  <div class="offers__galeryTextInfoItem TextInfoItem3">
+                    <p>КПП</p>
+                    <h5>Автомат</h5>
+                  </div>
+                </div>
+                <a href="#" class="offers__more"><button>Подробнее</button></a>
+              </div>
+            </div>
+            <div class="offers__galeryItem">
+              <img src="imgs/offers/1.png" alt="">
+              <div class="offers__galeryTextContainer">
+                <h3>Audi Q5 2020г</h3>
+                <div class="offers__galeryPrice">
+                  <p class="priceSale"><del>2 245 000 Р</del></p>
+                  <p class="price"><span>2 245 000 Р</span></p>
+                </div>
+                <hr>
+                <div class="offers__galeryTextInfo">
+                  <div class="offers__galeryTextInfoItem TextInfoItem1">
+                    <p>Пробег</p>
+                    <h5>52 900 км.</h5>
+                  </div>
+                  <div class="offers__galeryTextInfoItem TextInfoItem2">
+                    <p>Двигатель</p>
+                    <h5>220л.с</h5>
+                  </div>
+                  <div class="offers__galeryTextInfoItem TextInfoItem3">
+                    <p>КПП</p>
+                    <h5>Автомат</h5>
+                  </div>
+                </div>
+                <a href="#" class="offers__more"><button>Подробнее</button></a>
+              </div>
+            </div>
+            <div class="offers__galeryItem">
+              <img src="imgs/offers/1.png" alt="">
+              <div class="offers__galeryTextContainer">
+                <h3>Audi Q5 2020г</h3>
+                <div class="offers__galeryPrice">
+                  <p class="priceSale"><del>2 245 000 Р</del></p>
+                  <p class="price"><span>2 245 000 Р</span></p>
+                </div>
+                <hr>
+                <div class="offers__galeryTextInfo">
+                  <div class="offers__galeryTextInfoItem TextInfoItem1">
+                    <p>Пробег</p>
+                    <h5>52 900 км.</h5>
+                  </div>
+                  <div class="offers__galeryTextInfoItem TextInfoItem2">
+                    <p>Двигатель</p>
+                    <h5>220л.с</h5>
+                  </div>
+                  <div class="offers__galeryTextInfoItem TextInfoItem3">
+                    <p>КПП</p>
+                    <h5>Автомат</h5>
+                  </div>
+                </div>
+                <a href="#" class="offers__more"><button>Подробнее</button></a>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+        <a href="#" class="offers__viewAll p-0"><button>Смотреть все</button></a>
+      </div>
+    </div>
+  </div>
+  <!-- TRADE-IN-BACKGROUND -->
+  <div class="trade-in">
+    <div class="container-fluid p-0">
+      <div class="container p-0">
+        <div class="row m-0">
+          <h2 class="p-0">trade-in</h2>
+          <h4 class="p-0">обменяйте<br>ваш автомобиль<br>на новый!</h4>
+        </div>
+      </div>
+      <img src="imgs/trade-it_background.png" alt="">
+    </div>
+  </div>
+  <!-- СДАТЬ АВТОМОБИЛЬ В TRADE-IN -->
+  <div class="chooseTrade-in">
+    <div class="container p-0">
+      <div class="row">
+        <h2>Сдать автомобиль в Trade-in</h2>
+        <form action="#" class="items">
+          <div class="item">
+            <p>Марка</p>
+            <input type="text" placeholder="Audi">
+          </div>
+          <div class="item">
+            <p>Модель</p>
+            <input type="text" placeholder="Q5">
+          </div>
+          <div class="item">
+            <p>Желаемая сумма за автомобиль</p>
+            <input type="text" placeholder="1 500 000 ₽">
+          </div>
+          <div class="item">
+            <p>Ваше имя</p>
+            <input type="text" placeholder="Иван">
+          </div>
+          <div class="item">
+            <p>Ваш телефон</p>
+            <input class="tel" type="tel" name="tel" placeholder="+7 (___) ___-__-__">
+          </div>
+          <button type="submit">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- ВЫГОДНЫЙ КРЕДИТ -->
+  <div class="credit">
+    <div class="container p-0">
+      <div class="row">
+        <h3>Выгодный кредит</h3>
+        <div class="containerCredit">
+          <div class="progress">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <progress value="0" max="2"></progress>
+          </div>
+          <h5>Подобрать автомобиль</h5>
+          <div class="chooseContainer">
+            <div class="chooseLeftContainer">
+              <div class="chooseLeftContainerUp">
+                <div class="item">
+                  <p>Выберите марку</p>
+                  <input type="text" placeholder="Audi">
+                </div>
+                <div class="item">
+                  <p>Выберите модель</p>
+                  <input type="text" placeholder="Q5">
+                </div>
+                <div class="item">
+                  <p>Поколение</p>
+                  <input type="text">
+                </div>
+                <div class="item">
+                  <p>Комплектация</p>
+                  <input type="text">
+                </div>
+              </div>
+              <h6>Выберите машину</h6>
+              <div class="chooseLeftContainerDown">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga repellendus at eveniet, maiores expedita nihil eaque molestias, sunt esse omnis qui veritatis! Aperiam dolor quibusdam laudantium repudiandae corporis sequi quas.
+                Laudantium libero reprehenderit voluptates. Ducimus obcaecati id saepe molestias magni officiis nostrum accusamus rem, laborum vitae itaque est modi aperiam dolorum officia tempore sint! Optio qui facilis magni excepturi minus?
+                Doloremque officia dolorum possimus beatae, nesciunt consequatur illum, accusamus ratione totam laborum vitae quis exercitationem quod accusantium quibusdam reprehenderit quos modi provident est nobis! Error, cum? Eos unde amet cupiditate!
+                Expedita accusamus ex voluptates quisquam in delectus soluta! Harum adipisci, hic magnam consectetur quod sunt, voluptatem quo recusandae enim sed alias. Esse quibusdam repellendus illum placeat atque ducimus excepturi incidunt.
+                Aut iusto repudiandae dicta at aliquam cum. Cupiditate, ratione earum vero quis temporibus modi beatae sequi expedita quia accusantium ab minus dolor at laudantium, dicta quisquam tenetur eaque molestiae animi!</p>
+              </div>
+            </div>
+            <div class="chooseRightContainer">
+              <button type="button">Далее</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- КАРТА -->
+  <div class="map">
+    <div class="container-fluid p-0">
+      <div class="background">
+        <img class="backgroundMap" src="imgs/map.png" alt="">
+        <div class="addres">
+          <img src="imgs/polygon-left.png" alt="">
+          <h6>Офис Атлант Авто:</h6>
+          <p>Санкт-Петербург,<br>Московское шоссе, д 32</p>
+        </div>
+      </div>
+      <div class="container p-0">
+        <div class="row m-0">
+          <div class="questions">
+            <h3>Остались вопросы?</h3>
+            <p>Оставьте заявку и наши менеджеры<br>свяжутся с Вами в ближайшее время!</p>
+            <form action="#">
+              <input type="text" placeholder="Ваше имя">
+              <input class='tel' type="tel" placeholder="Ваш телефон">
+              <button type="submit">Оставить заявку</button>
+            </form>
+            <label class="checkbox">
+              <input type="checkbox">
+              <span>Даю согласие на обработку персональных данных</span>
+            </label>
+          </div>
+          <div class="addres768px p-0">
+            <h6>Офис Атлант Авто:</h6>
+            <p>Санкт-Петербург,<br>Московское шоссе, д 32</p>
+            <a href="#">Смотреть на карте</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ФУТЕР -->
+  <footer class="footer">
+    <div class="container p-0">
+      <div class="row">
+        <div class="footer__large">
+          <div class="footer__head">
+            <div class="footer__item1">
+              <div class="footer__logo">
+                <img src="imgs/logo-footer.png" alt="">
+                <h3>АТЛАНТ<br>АВТО</h3>
+              </div>
+              <p class="footer__addres">г. Санкт-Петербург, ул. Хасанская д.5</p>
+              <p class="footer__graph">Пн-Сб: с 9-00 до 20:00<br>Вс: с 10-00 до 20:00</p>
+              <h2>8 (800 )500-30-20</h2>
+              <p class="footer__item1Link"><a href="#">Как проехать</a></p>
+              <button>Заказать звонок</button>
+            </div>
+            <div class="footer__item2">
+              <h3 class="footer__newCar">Новые автомобили</h3>
+              <p>До 1 500 000₽</p>
+              <p>До 2 500 000₽</p>
+              <p>До 3 500 000₽</p>
+              <p>От 1 500 000₽</p>
+              <p>Отечественные</p>
+              <p>Иномарки</p>
+              <p>Японские</p>
+              <p>Немецкие</p>
+            </div>
+            <div class="footer__item3">
+              <h3>Автомобили с пробегом</h3>
+              <p>До 1 500 000₽</p>
+              <p>До 2 500 000₽</p>
+              <p>До 3 500 000₽</p>
+              <p>От 1 500 000₽</p>
+              <p>Отечественные</p>
+              <p>Иномарки</p>
+              <p>Японские</p>
+              <p>Немецкие</p>
+            </div>
+            <div class="footer__item4">
+              <h3>Услуги</h3>
+              <p>Кредит</p>
+              <p>Лизинг</p>
+              <p>ОСАГО</p>
+              <p>КАСКО</p>
+              <p>Оформление а\м в ГИБДД</p>
+              <p>TRADE IN</p>
+              <div class="pay">
+                <img src="imgs/mastercard.png" alt="">
+                <img src="imgs/visa.png" alt="">
+                <img src="imgs/mir.png" alt="">
+              </div>
+            </div>
+          </div>
+          <hr class="hr">
+          <div class="footer__foot">
+            <p class="avtor">© 1998–2022 «АТЛАНТ-АВТО»</p>
+            <div class="icons">
+              <a href="https://www.youtube.com/watch?v=4EfM6rPmxow&t=15s" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+              <a href="https://www.youtube.com/watch?v=F5tSoaJ93ac&t=33s" target="_black"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+            </div>
+            <p class="conditions"><a href="#">Политика конфиденциальности</a></p>
+          </div>
+        </div>
+        <div class="footer__smaller">
+          <a href="#top"><div class="scrollUp">
+            <img src="imgs/rowUp.png" alt="">
+          </div></a>
+          <h4 class="number">8 (800 )500-30-20</h4>
+          <p class="praph">Пн-пт: 10:00—18-00<br>Сб-вс: 11-00—17-00</p>
+          <button>Заказать звонок</button>
+          <p class="avtor">© 1998–2022 «АТЛАНТ-АВТО»</p>
+          <div class="pay">
+            <img src="imgs/mastercard.png" alt="">
+            <img src="imgs/visa.png" alt="">
+            <img src="imgs/mir.png" alt="">
+          </div>
+          <p class="conditions"><a href="#">Политика конфиденциальности</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="js/burger.js"></script>
+  <script src="js/addBrends.js"></script>
+  <script src="js/sliderBootstrap.js"></script>
+  <script src="js/inputPhone.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+@import url('./color.css');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+.wrapper {
+  display: grid;
+  place-content: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.calc {
+}
+
+.calc__container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 580px;
+
+  color: #fff;
+  background-color: var(--salat);
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.calc__screen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex: 1 1 auto;
+  background-color: var(--calc-screen);
+  overflow-x: auto;
+}
+
+.calc__value {
+  padding-inline-end: 15px;
+  padding-block-end: 15px;
+}
+
+.calc__result {
+  padding-inline-end: 20px;
+  padding-block-end: 10px;
+  font-size: 40px;
+}
+
+.calc__panel {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+table {
+  border: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+tr,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  width: 75px;
+  height: 75px;
+
+  color: #fff;
+  background-color: var(--btn);
+  border: none;
+  outline: none;
+  vertical-align: top;
+
+  transition: background 0.3s;
+}
+
+.big-btn {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    cursor: pointer;
+    background-color: var(--yell);
+  }
+}

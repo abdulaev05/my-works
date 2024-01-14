@@ -1,0 +1,35 @@
+@media screen and (max-width: 1440px) {
+  .header {
+    &__background {
+      display: none;
+    }
+  }
+  .mainveiw {
+    &__background {
+      flex: 0 1 45%;
+      transform: translateX(0);
+    }
+    &__text {
+      transform: translateX(-66px);
+      flex: 0 1 55%;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  // .container{
+  //   padding: 40px;
+  // }
+
+  .header {
+    &__background {
+      display: none;
+    }
+  }
+  .mainveiw {
+    &__background {
+    }
+    &__text {
+      gap: clamp(16px, 7.3vw, 32px);
+    }
+  }
+}

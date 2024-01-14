@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@900&display=swap");
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url("../fonts/museo_sans_cyrl_100.ttf");
+  src: url("../fonts/museo_sans_cyrl_300.ttf");
+  src: url("../fonts/museo_sans_cyrl_500.ttf");
+  src: url("../fonts/museo_sans_cyrl_700.ttf");
+  src: url("../fonts/museo_sans_cyrl_900.ttf");
+}
+body{
+  min-width: 320px;
+}
+@import 'zero';
+@import 'header';
+@import 'navBar';
+@import 'chooseBrend';
+@import 'chooseAvto';
+@import 'ourServices';
+@import 'offers';
+@import 'trade-in';
+@import 'chooseTrade-in';
+@import 'credit';
+@import 'map';
+@import 'footer';

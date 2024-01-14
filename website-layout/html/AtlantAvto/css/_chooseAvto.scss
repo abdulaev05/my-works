@@ -1,0 +1,134 @@
+.chooseAvto {
+  .container {
+    .row {
+      position: relative;
+      max-width: 100%;
+      margin: 10px 20px 0 20px;
+      padding: 24px 36px 44px 36px;
+      background: #EFEFEF;
+      border-radius: 5px;
+      z-index: 5;
+      h3{
+        font-family: 'Museo Sans Cyrl';
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+      }
+      .navBar {
+        margin-top: 30px;
+        form{
+          ul{
+            display:grid;
+            grid-template-columns: 1fr;
+            align-items: end;
+            gap: 20px;
+            .item{
+              display: flex;
+              flex-direction: column;
+              gap: 13px;
+              li{
+                font-family: 'Museo Sans Cyrl';
+                font-size: 12px;
+                line-height: 140%;
+                letter-spacing: 0.02em;
+              }
+              input{
+                width: 100%;
+                height: 50px;
+                padding-left: 15px;
+                border: 1px solid;
+                border-radius: 5px;
+              }
+            }
+            button{
+              display: grid;
+              place-items: center;
+              width: 100%;
+              height: 50px;
+              color: #fff;
+              background: radial-gradient(152% 2161.08% at -8.21% 0%, #FA544B 0%, #C54740 100%);
+              border-radius: 5px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width:450px) {
+      .row{
+        margin: 40px 20px 0 20px;
+        h3{
+          font-size: 26px;
+        }
+      }
+    }
+    @media (min-width:576px) {
+      .row {
+        margin: 25px 0 0 0;
+      }
+    }
+    @media (min-width:767px) {
+      .row {
+        margin: 40px 0 0 0;
+        .navBar {
+          form{
+            ul{
+              grid-template-columns: 1fr 1fr;
+            }
+            button{
+              grid-column: span 2;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width:992px) {
+      .row {
+        margin: 100px 0 0 0;
+        .navBar {
+          form{
+            ul{
+              grid-template-columns: 1fr 1fr;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width:1200px) {
+      .row {
+        margin: 170px 0 0 0;
+        .navBar {
+          form{
+            ul{
+              grid-template-columns: repeat(3 , 1fr);
+              button{
+                grid-column: span 3;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (min-width:1400px) {
+      .row {
+        margin: 20px 0 0 0;
+        .navBar {
+          form{
+            ul{
+              grid-template-columns: repeat(7 , 1fr);
+              button{
+                grid-column: span 1;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (min-width:1740px) {
+      .row {
+        margin: 150px 0 0 0;
+      }
+    }
+  }
+}

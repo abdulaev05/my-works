@@ -1,0 +1,84 @@
+
+.service {
+  margin: 60px 20px 0 20px;
+  .row{
+    gap: 42px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    justify-items: center;
+    min-height: 156px;
+    background: linear-gradient(110deg , 
+    #FCFCFC 0% , #eeeeee 20% ,
+    #FCFCFC 20% , #eeeeee 39% ,
+    #FCFCFC 39% , #eeeeee 59% ,
+    #FCFCFC 59% , #eeeeee 78% ,
+    #FCFCFC 78% , #eeeeee 100% ,
+    );
+    border-radius: 5px;
+  }
+  & a{
+    display: grid;
+    align-items: end;
+    text-decoration: none;
+    color: inherit;
+    &:hover{
+      color: inherit;
+    }
+  }
+  &__item {
+    display: grid;
+    & img{
+      max-width: 100%;
+    }
+  }
+  &__text {
+    display: grid;
+    justify-content: center;
+    & h5{
+      font-family: 'Museo Sans Cyrl';
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+    }
+    & p{
+      font-family: 'Museo Sans Cyrl';
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+    }
+    & span{
+      font-family: 'Museo Sans Cyrl';
+      color:#C54740;
+    }
+  }
+  & h3{
+    font-family: 'Museo Sans Cyrl';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+  }
+  @media (min-width:1400px){
+    margin: 60px auto 0 auto;
+    &__items {
+      justify-items: start;
+    }
+    & a{
+      display: grid;
+      align-items: center;
+    }
+    &__item{
+      grid-template-columns: repeat(2 , 1fr);
+      align-items: center;
+    }
+    &__text {
+      display: block;
+    }
+  }
+  @media (max-width:992px){
+    display: none;
+  }
+}

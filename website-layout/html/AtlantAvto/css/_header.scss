@@ -1,0 +1,191 @@
+.containerHeader1320px{
+  z-index: 30;
+  .row{
+    display: flex;
+    align-items: center;
+    min-height: 110px;
+    .logo{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin-right: 45px;
+      h5{
+        margin-top: 6px;
+        margin-left: 10px;
+        font-family: MuseoModerno;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 140%;
+      }
+    }
+    .location{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin-right: 20px;
+      p{
+        margin-left: 10px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+      }
+    }
+    .search{
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+      margin-right: 20px;
+      input{
+        padding-left: 15px;
+        width: 320px;
+        height: 50px;
+      }
+      img{
+        position: absolute;
+        right: 30px;
+        top: 15px;
+      }
+    }
+    .graph{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin-right: 30px;
+      p{
+        margin-left: 10px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+      }
+    }
+    .contacts{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin-right: 30px;
+      img{
+        margin-top: 7px;
+      }
+      .phone{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        h4{
+          margin: 0;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 140%;
+        }
+        p{
+          margin-left: 17px;
+          font-size: 12px;
+          line-height: 140%;
+          color: #5B5B5B;
+        }
+      }
+    }
+    .headerButton{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 145px;
+      height: 50px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 140%;
+      color: #F5F5F5;
+      background: radial-gradient(152% 2161.08% at -8.21% 0%, #4B97DD 0%, #4BBADD 100%);
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      &:hover{
+        background: radial-gradient(152% 2161.08% at -8.21% 0%, #2a84d8 0%, #28b4de 100%);
+        color: #000;
+        cursor: pointer;
+      }
+    }
+  }
+  @media (max-width:1400px) {
+    display: none;
+  }
+}
+.containerHeaderMobile{
+  z-index: 30;
+  .rowHeaderMobile{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    .burger{
+      display: block;
+      width: 74px;
+      height: 50px;
+      position: relative;
+      z-index: 32;
+      span , span::before , span::after{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0; 
+        right: 0;
+        margin: auto;
+        width: 30px;
+        height: 3px;
+        background: #5B5B5B;
+        border-radius: 2px;
+      }
+      span::before , span::after{
+        content: '';
+        transition: 0.2s;
+      }
+      span::before{
+        transform: translateY(-7px);
+      }
+      span::after{
+        transform: translateY(7px);
+      }
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    .burger_active{
+      span{
+        height: 0;
+      }
+      span:before{
+        transform: rotate(45deg);
+      }
+      span:after{
+        transform: rotate(-45deg);
+      }
+    }
+    .logo{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      img{
+        width: 30px;
+        height: 30px;
+      }
+      h5{
+        margin: 0;
+        margin-left: 10px;
+        font-family: MuseoModerno;
+        font-weight: 900;
+        font-size: 10px;
+      }
+    }
+    .phone{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 19px;
+      width: 36px;
+      height: 36px;
+      background: radial-gradient(119.32% 1862.64% at -8.21% 0%, #FA544B 0%, #C54740 100%);
+      border-radius: 5px;
+    }
+  }
+  @media (min-width:1401px) {
+    display: none;
+  }
+}

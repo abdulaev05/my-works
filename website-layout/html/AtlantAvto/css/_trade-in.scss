@@ -1,0 +1,133 @@
+.trade-in {
+  .container-fluid {
+    max-width: 1920px;
+    margin: 70px auto 0 auto;
+    position: relative;
+    img{
+      width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+    .container {
+      .row {
+        h2{
+          margin: 46px 0 0 0;
+          font-family: 'Museo Sans Cyrl';
+          font-weight: 700;
+          font-size: 80px;
+          line-height: 140%;
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+        }
+        h4{
+          margin: 40px 0 0 0;
+          font-family: 'Museo Sans Cyrl';
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 155.5%;
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    @media (max-width:1600px) {
+      .container {
+        .row {
+          h2{
+            font-size: 70px;
+          }
+          h4{
+            font-size: 27px;
+          }
+        }
+      }
+    }
+    @media (max-width:1400px) {
+      .container {
+        .row {
+          h2{
+            font-size: 55px;
+          }
+          h4{
+            margin: 20px 0 0 0;
+            font-size: 23px;
+          }
+        }
+      }
+    }
+    @media (max-width:1200px) {
+      .container {
+        .row {
+          h2{
+            margin: 38px 0 0 0;
+            font-size: 45px;
+          }
+          h4{
+            margin: 16px 0 0 0;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    @media (max-width:992px) {
+      .container {
+        .row {
+          h2{
+            margin: 25px 0 0 0;
+            font-size: 38px;
+          }
+          h4{
+            margin: 12px 0 0 0;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    @media (max-width:768px) {
+      .container {
+        .row {
+          h2{
+            margin: 20px 0 0 0;
+            font-size: 25px;
+          }
+          h4{
+            margin: 8px 0 0 0;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    @media (max-width:576px) {
+      .container {
+        .row {
+          padding: 0 20px;
+          h2{
+            margin: 15px 0 0 0;
+            font-size: 25px;
+          }
+          h4{
+            margin: 5px 0 0 0;
+            font-size: 9px;
+          }
+        }
+      }
+    }
+    @media (max-width:470px) {
+      .container {
+        .row {
+          padding: 0 20px;
+          h2{
+            margin: 10px 0 0 0;
+            font-size: 18px;
+          }
+          h4{
+            margin: 5px 0 0 0;
+            font-size: 7px;
+          }
+        }
+      }
+    }
+  }
+}
